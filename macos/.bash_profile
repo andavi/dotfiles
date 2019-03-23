@@ -1,46 +1,8 @@
-export API_CLARIFAI=e0b0295af1b74d81be3ba345f2d743c3
-
-#PATH="/usr/local/bin:$PATH"
-
 # Setting PATH for Python 3.5
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-#####################################################
-# All this below from Git course on Udacity
-# Enable tab completion
-source ~/git-completion.bash
-
-# colors!
-#green="\[\033[0;32m\]"
-#blue="\[\033[0;34m\]"
-#red="\[\033[0;31m\]"
-#reset="\[\033[0m\]"
-
-# Change command prompt
-#source ~/git-prompt.sh
-#export GIT_PS1_SHOWDIRTYSTATE=1
-# '\u' adds the name of the current user to the prompt
-# '\$(__git_ps1)' adds git-related stuff
-# '\W' adds the name of the current directory
-# uncomment line below for original git course colors
-#export PS1="$green\u$red\$(__git_ps1)$blue \W$ $reset"
-
-#####################################################
-# OSX Daily Recommendation
-#export CLICOLOR=1
-#export LSCOLORS=ExFxBxDxCxegedabagacad
-#alias ls='ls -GFh'
-
-# More Aliases
-#alias ll='ls -l'
-#alias la='ls -a'
-#alias cmatrix='cmatrix -C blue -a'
-#alias vtop='vtop -t brew'
-#alias trode='tree -a -I "node_modules|.git|.git-old"'
-
 #####################################################
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -70,6 +32,9 @@ export EDITOR=code
 if [ -d "$HOME/adb-fastboot/platform-tools" ] ; then
  export PATH="$HOME/adb-fastboot/platform-tools:$PATH"
 fi
+
+#############################################
+# MS
 PATH=$PATH:/opt/metasploit-framework/bin
 export PATH=$PATH:/opt/metasploit-framework/bin
 
@@ -91,4 +56,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 
-########################################################
+#######################################################o
+# Welcome message
+echo "Current Time:" "$(date -R)"
+weatherline

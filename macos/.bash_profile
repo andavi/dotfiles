@@ -14,19 +14,19 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 source ~/git-completion.bash
 
 # colors!
-green="\[\033[0;32m\]"
-blue="\[\033[0;34m\]"
-red="\[\033[0;31m\]"
-reset="\[\033[0m\]"
+#green="\[\033[0;32m\]"
+#blue="\[\033[0;34m\]"
+#red="\[\033[0;31m\]"
+#reset="\[\033[0m\]"
 
 # Change command prompt
-source ~/git-prompt.sh
-export GIT_PS1_SHOWDIRTYSTATE=1
+#source ~/git-prompt.sh
+#export GIT_PS1_SHOWDIRTYSTATE=1
 # '\u' adds the name of the current user to the prompt
 # '\$(__git_ps1)' adds git-related stuff
 # '\W' adds the name of the current directory
 # uncomment line below for original git course colors
-export PS1="$green\u$red\$(__git_ps1)$blue \W$ $reset"
+#export PS1="$green\u$red\$(__git_ps1)$blue \W$ $reset"
 
 #####################################################
 # OSX Daily Recommendation

@@ -1,15 +1,19 @@
 # OSX Daily Recommendation
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad                
-alias ls='ls -GFh'
+#export CLICOLOR=1
+#export LSCOLORS=ExFxBxDxCxegedabagacad                
+#alias ls='ls -GFh'
 
-# More aliaises
-alias ll='ls -rthla'
-alias la='ls -a'                                                                
+# exa
+alias ls='exa -F --color=always'
+alias ll='ls -lhgm@FHa --git'
+alias la='ls -a'
 
+# misc
 alias cmatrix='cmatrix -a'
 alias vtop='vtop -t brew'
-alias trode='tree -a -I "node_modules|.git|.git-old"'
+alias tree='exa -TF --color=always'
+alias treepo='tree -a -I "node_modules|.git|.git-old"'
+alias treelong='ll -TI "node_modeules|.git|.git-old"'
 
 # Weather from wttr.in
 alias weather='curl wttr.in/Seattle?0qu'

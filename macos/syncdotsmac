@@ -4,7 +4,7 @@
 # Run it from the root of the dotfile repo
 
 # copy MacOS bash configs
-rsync -azvh ~/.bash_profile macos/
-rsync -azvh ~/.bash_aliases macos/
+rsync -azvh ~/.bash_profile .
+rsync -azvh ~/.bash_aliases .
 
-rsync -azvhr ~/.config/neofetch/ macos/neofetch/
+rsync -azvhr ~/.config/neofetch/ neofetch/

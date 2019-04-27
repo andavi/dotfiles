@@ -60,3 +60,9 @@ fi
 # Welcome message
 echo "Current Time:" "$(date -R)"
 weatherline
+#echo '"'; sun-tzu-quotes; echo '" -Sun Tzu' > suntzunow 
+#cat suntzunow | lolcat
+
+suntzu="$(sun-tzu-quotes)"
+quote="$suntzu -Sun Tzu"
+echo "$quote" | lolcat 

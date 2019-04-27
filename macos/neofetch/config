@@ -469,7 +469,7 @@ color_blocks="on"
 # Default:  '3'
 # Values:   'num'
 # Flag:     --block_width
-block_width=2
+block_width=3
 
 # Color block height in lines
 #

@@ -25,3 +25,6 @@ alias weather='curl wttr.in/Seattle?0qu'
 alias weatherline="curl 'wttr.in/Seattle?u&format=%l:+%c+%t+%h+%w+%m'"
 alias forecast='curl wttr.in/Seattle?u'
 alias moon='curl wttr.in/moon'
+
+# more
+alias fakecard='faker-cli --helpers userCard | jq'

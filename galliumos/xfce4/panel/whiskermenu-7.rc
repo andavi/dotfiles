@@ -1,5 +1,5 @@
 favorites=galliumos-update.desktop,exo-web-browser.desktop,exo-file-manager.desktop,hexchat.desktop,pidgin.desktop,deadbeef.desktop,exo-terminal-emulator.desktop
-recent=debian-uxterm.desktop,debian-xterm.desktop,nvim.desktop,font-manager.desktop,com.gexperts.Tilix.desktop,gparted.desktop,menulibre.desktop,nextcloud.desktop,galliumos-update.desktop,firefox.desktop
+recent=zenmap.desktop,galliumos-update.desktop,mat.desktop,org.gnome.DiskUtility.desktop,thunar-volman-settings.desktop,gparted.desktop,exo-web-browser.desktop,system-config-printer.desktop,gdebi.desktop,exo-file-manager.desktop
 button-title=Applications Menu
 button-icon=xubuntu-logo-menu
 button-single-row=true

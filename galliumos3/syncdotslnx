@@ -7,6 +7,9 @@
 rsync -azvh ~/.bash_profile .
 rsync -azvh ~/.bash_aliases .
 rsync -azvh ~/.zshrc .
+# rsync -azvhr ~/.oh-my-zsh/ .oh-my-zsh/
+rsync -azvh ~/.p10k.zsh .
+
 
 rsync -azvhr ~/.config/neofetch/ neofetch/
 # rsync -azvhr ~/.config/tilix/ tilix/

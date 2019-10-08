@@ -6,10 +6,11 @@
 # copy galliumos bash configs
 rsync -azvh ~/.bash_profile .
 rsync -azvh ~/.bash_aliases .
+rsync -azvh ~/.zshrc .
 
 rsync -azvhr ~/.config/neofetch/ neofetch/
-rsync -azvhr ~/.config/tilix/ tilix/
-rsync -azvhr ~/.config/xfce4/ xfce4/
-rsync -azvhr ~/.fonts/ fonts/
+# rsync -azvhr ~/.config/tilix/ tilix/
+# rsync -azvhr ~/.config/xfce4/ xfce4/
+rsync -azvhr ~/.local/share/fonts/ fonts/
 
-rsync -azvhr /usr/share/powerline/config_files/ powerline/config_files/
+# rsync -azvhr /usr/share/powerline/config_files/ powerline/config_files/

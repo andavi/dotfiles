@@ -1,7 +1,8 @@
+# update system
 function apt-updater {
-	sudo apt update &&
-	sudo apt upgrade -y &&
-	sudo apt dist-upgrade -Vy &&
+	sudo apt -qq update &&
+	sudo apt upgrade -Vy &&
+	sudo apt full-upgrade -Vy &&
 	sudo apt autoremove -y &&
 	sudo apt autoclean &&
 	sudo apt clean &&
@@ -28,3 +29,15 @@ alias moon='curl wttr.in/moon'
 
 # more
 alias fakecard='faker-cli --helpers userCard | jq'
+
+# rsync shortcuts
+function cpr {
+  sudo rsync --archive -hh --partial --info=stats1 --info=progress2 --modify-window=1 "$@"
+}
+function mvr {
+  sudo rsync --archive -hh --partial --info=stats1 --info=progress2 --modify-window=1 --remove-source-files "$@"
+}
+
+# xclip
+alias c='xclip'
+alias v='xclip -o'

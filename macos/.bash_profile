@@ -55,14 +55,18 @@ if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi
 
+#######################################################
+# add ~/.local to PATH
+export PATH=$PATH:/Users/andavi/.local/bin
 
-#######################################################o
+#######################################################
 # Welcome message
 echo "Current Time:" "$(date -R)"
 weatherline
 #echo '"'; sun-tzu-quotes; echo '" -Sun Tzu' > suntzunow 
 #cat suntzunow | lolcat
 
-suntzu="$(sun-tzu-quotes)"
+suntzu="\"$(sun-tzu-quotes)\""
 quote="$suntzu -Sun Tzu"
 echo "$quote" | lolcat 
+export PATH="/usr/local/sbin:$PATH"

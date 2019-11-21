@@ -1,10 +1,13 @@
 #!/bin/bash
 
 # This will sync the dotfiles from your system to the repo
-# Run it from the root of the dotfile repo
+# Run it from the appropriate os directory within the dotfile repo
 
 # copy MacOS bash configs
 rsync -azvh ~/.bash_profile .
 rsync -azvh ~/.bash_aliases .
+
+# zsh configs
+rsync -azvh ~/.zshrc
 
 rsync -azvhr ~/.config/neofetch/ neofetch/

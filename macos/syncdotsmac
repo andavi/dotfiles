@@ -7,7 +7,12 @@
 rsync -azvh ~/.bash_profile .
 rsync -azvh ~/.bash_aliases .
 
-# zsh configs
-rsync -azvh ~/.zshrc
+# copy MacOS zsh configs
+rsync -azvh ~/.zshrc .
+rsync -azvh ~/.p10k.zsh .
 
+# vimrc
+rsync -azvh ~/.vimrc .
+
+# neofetch
 rsync -azvhr ~/.config/neofetch/ neofetch/

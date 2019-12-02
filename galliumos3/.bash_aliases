@@ -41,3 +41,12 @@ function mvr {
 # xclip
 alias c='xclip'
 alias v='xclip -o'
+
+# colormap oneliner - borrowed from .p10k.zsh
+function colormap {
+	for i in {0..255}; do print -Pn "%${i}F${(l:3::0:)i}%f " ${${(M)$((i%8)):#7}:+$'\n'}; done
+}
+
+
+# listen
+alias listen='sudo netstat -ntpul'

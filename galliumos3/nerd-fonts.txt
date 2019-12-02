@@ -1,0 +1,10 @@
+FiraCode
+Hack
+Hasklig
+MesloLGS
+Monoid
+OpenDyslexic
+SpaceMono
+Terminus
+Ubuntu
+UbuntuMono

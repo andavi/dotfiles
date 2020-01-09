@@ -206,5 +206,42 @@ e0b3
 nf-ple-column_number
 e0a3
 
+☯︎
+YIN YANG
+Unicode: U+262F U+FE0E, UTF-8: E2 98 AF EF B8 8E
 
+☸︎
+WHEEL OF DHARMA
+Unicode: U+2638 U+FE0E, UTF-8: E2 98 B8 EF B8 8E
 
+⚓︎
+ANCHOR
+Unicode: U+2693 U+FE0E, UTF-8: E2 9A 93 EF B8 8E
+
+☘︎
+SHAMROCK
+Unicode: U+2618 U+FE0E, UTF-8: E2 98 98 EF B8 8E
+
+⎈
+HELM SYMBOL
+Unicode: U+2388, UTF-8: E2 8E 88
+
+⨳
+SMASH PRODUCT
+Unicode: U+2A33, UTF-8: E2 A8 B3
+
+⌬
+BENZENE RING
+Unicode: U+232C, UTF-8: E2 8C AC
+
+⚛︎
+ATOM SYMBOL
+Unicode: U+269B U+FE0E, UTF-8: E2 9A 9B EF B8 8E
+
+☕︎
+HOT BEVERAGE
+Unicode: U+2615 U+FE0E, UTF-8: E2 98 95 EF B8 8E
+
+𝌍
+TETRAGRAM FOR OPPOSITION
+Unicode: U+1D30D, UTF-8: F0 9D 8C 8D

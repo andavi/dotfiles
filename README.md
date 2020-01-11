@@ -17,7 +17,7 @@ Instructions for myself:
 │  ├── aliases.zsh
 │  ├── icons.txt
 │  └── nerd-fonts.txt
-├── galliumos3/
+├── debian/
 │  ├── .bash_aliases
 │  ├── .bash_aliases-arm
 │  ├── .p10k.zsh
@@ -37,3 +37,9 @@ Instructions for myself:
 │  └── syncdotsmac*
 └── README.md
 ```
+
+### To Do
+
+* Make sync script work from root
+* Have sync script update new config files automatically
+* Keep learning

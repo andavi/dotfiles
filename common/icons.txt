@@ -1,3 +1,28 @@
+------Nerd Font Icons------
+
+nf-linux-tux (?)
+f31a
+
+
+nf-devicons-osx (?)
+f302
+
+
+nf-linux-ubuntu (?)
+f31b
+
+
+nf-linux-rpi (?)
+f315
+
+
+nf-(?)-(?)
+e272
+
+ﮂ
+nf-(?)-(?)
+fb82
+
 ﮸
 nf-mdi-plex
 fbb8
@@ -205,6 +230,8 @@ e0b3
 
 nf-ple-column_number
 e0a3
+
+-----Unicode------
 
 ☯︎
 YIN YANG

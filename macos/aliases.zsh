@@ -46,10 +46,5 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias wget="wget -c"
 alias gs="git status"
 
-# icons
+# emoticons
 alias aliens='echo "\U0001f47d"'
-alias tux='echo "\uf31a"'
-alias mac='echo "\uf302"'
-alias ubuntu='echo "\uf31b"'
-alias rpi='echo "\uf315"'
-alias yin='echo "\ufb7e"'

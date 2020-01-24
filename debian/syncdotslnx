@@ -1,21 +1,16 @@
 #!/bin/sh
 
 # This will sync the dotfiles from your system to the repo
-# Run it from the os directory of the dotfile repo
+# Run it from the repo root ~~os directory~~ of the dotfile repo
 
 # copy galliumos shell configs
-rsync -azvh ~/.bash_profile .
-rsync -azvh ~/.bash_aliases .
-rsync -azvh ~/.zshrc .
-# rsync -azvhr ~/.oh-my-zsh/ .oh-my-zsh/
-rsync -azvh ~/.p10k.zsh .
+rsync -azvh ~/.bash_aliases ./debian/
+rsync -azvh ~/.zshrc ./debian/
+rsync -azvh ~/.p10k.zsh ./debian/
 
-
+# misc config
 rsync -azvhr ~/.config/neofetch/ neofetch/
 # rsync -azvhr ~/.config/tilix/ tilix/
-# rsync -azvhr ~/.config/xfce4/ xfce4/
-# rsync -azvhr ~/.local/share/fonts/ fonts/
 
+# sync newest programming fonts
 ls -D ~/.local/share/fonts/ >nerd-fonts.txt
-
-# rsync -azvhr /usr/share/powerline/config_files/ powerline/config_files/

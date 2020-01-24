@@ -8,3 +8,4 @@ SpaceMono
 Terminus
 Ubuntu
 UbuntuMono
+VictorMono

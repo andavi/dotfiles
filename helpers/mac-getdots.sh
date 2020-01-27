@@ -1,23 +1,20 @@
 #!/bin/sh
 
 # This will sync the dotfiles from your system to the repo
-# Run it from the appropriate os directory within the dotfile repo
-
-# TODO: make sync script at root call particular script based on OS
 
 # copy MacOS bash configs
-rsync -azvh ~/.bash_profile .
-rsync -azvh ~/.bash_aliases .
+rsync -azvh ~/.bash_aliases macos/
+rsync -azvh ~/.bash_profile macos/
 
 # copy MacOS zsh configs
-rsync -azvh ~/.zshrc .
-rsync -azvh ~/.p10k.zsh .
-rsync -azvh /Users/andavi/.oh-my-zsh/custom/aliases.zsh ./macos/
-rsync -azvh /Users/andavi/.oh-my-zsh/custom/shortcuts.zsh ./common/
+rsync -azvh ~/.zshrc macos/
+rsync -azvh ~/.p10k.zsh macos/
+rsync -azvh /Users/andavi/.oh-my-zsh/custom/aliases.zsh macos/
+rsync -azvh /Users/andavi/.oh-my-zsh/custom/shortcuts.zsh common/
 
 
 # vimrc
-rsync -azvh ~/.vimrc .
+rsync -azvh ~/.vimrc macos/
 
 # neofetch
-rsync -azvhr ~/.config/neofetch/ neofetch/
+rsync -azvhr ~/.config/neofetch/ macos/neofetch/

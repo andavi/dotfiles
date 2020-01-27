@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # This will sync the dotfiles from your system to the repo
 # Run it from the appropriate os directory within the dotfile repo

@@ -2,7 +2,7 @@
 export TERM="xterm-256color"
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/andrew/.oh-my-zsh"
@@ -11,9 +11,9 @@ export ZSH="/home/andrew/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 # ZSH_THEME="agnoster"
-# ZSH_THEME=powerlevel10k/powerlevel10k/
+ZSH_THEME=powerlevel10k/powerlevel10k
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -47,7 +47,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -76,15 +76,16 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(
 	git
 	colored-man-pages
-	# tmux
-  # zsh-syntax-highlighting
-  # zsh-autosuggestions
-  # thefuck
+	tmux
+	zsh-syntax-highlighting
+	zsh-autosuggestions
+	thefuck
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
 export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -106,11 +107,10 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# jalias zshconfig="mate ~/.zshrc"
+# alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
-#source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $ZSH_CUSTOM/aliases.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
@@ -126,3 +126,21 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 # nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/andrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/andrew/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/andrew/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/andrew/anaconda3/bin:$PATH"
+    fi
+
+unset __coqnda_setup
+# <<< conda initialize <<<
+
+
+eval $(thefuck --alias fuck)

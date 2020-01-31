@@ -68,12 +68,12 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  brew
+  zsh-nvm
   colored-man-pages
   zsh-syntax-highlighting
   zsh-autosuggestions
   thefuck
-  brew
-  nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,7 +106,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source $ZSH_CUSTOM/aliases.zsh
+#bsource $ZSH_CUSTOM/aliases.zsh
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"

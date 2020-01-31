@@ -35,3 +35,9 @@ alias fakecard='faker-cli --helpers userCard | jq'
 # pbcopy & pbpaste
 alias c='pbcopy'
 alias v='pbpaste'
+
+# colormap from  oh-my-zsh
+function colormap { 
+	for i in {0..255}; do print -Pn "%${i}F${(l:3::0:)i}%f " ${${(M)$((i%8)):#7}:+$'\n'}; done 
+}
+

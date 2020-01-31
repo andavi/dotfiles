@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/andavi/.oh-my-zsh
@@ -72,6 +72,8 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   thefuck
+  brew
+  nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -121,7 +123,7 @@ eval $(thefuck --alias)
 # brew formulae executables path
 export PATH="/usr/local/sbin:$PATH"
 
-# anaconda3 
+# anaconda3
 # export PATH="/Users/andavi/anaconda3/bin:$PATH"  # commented out by conda initialize
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -144,3 +146,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM

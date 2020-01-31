@@ -10,7 +10,8 @@ alias la='ls -a'
 
 # misc
 alias cmatrix='cmatrix -a'
-#alias vtop='vtop -t brew'
+alias vtop='vtop -t dark'
+alias suntzu='sun-tzu-quotes'
 
 alias tree='exa -TF --color=auto'
 alias treepo='tree -a -I "node_modules|.git|.git-old"'
@@ -46,5 +47,12 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias wget="wget -c"
 alias gs="git status"
 
+# clamav virus scan
+alias vscan='clamscan -r --bell -i /'
+
 # emoticons
 alias aliens='echo "\U0001f47d"'
+alias yin='echo "\ufb7e"'
+
+# easy timestamp snippet to  add to frequently ediited files
+alias timestamp='date "+%Y.%m.%d-%H:%M:%S"'

@@ -10,8 +10,9 @@ alias la='ls -a'
 
 # misc
 alias cmatrix='cmatrix -a'
-alias vtop='vtop -t dark'
-alias suntzu='sun-tzu-quotes'
+#  alias vtop='vtop -t dark'
+alias tzu='sun-tzu-quotes'
+alias tzubow='echo $(echo \"$(tzu)\" | lolcat -f -F 0.1) "~Sun Tzu"'
 
 alias tree='exa -TF --color=auto'
 alias treepo='tree -a -I "node_modules|.git|.git-old"'
@@ -37,6 +38,11 @@ alias fakecard='faker-cli --helpers userCard | jq'
 alias c='pbcopy'
 alias v='pbpaste'
 
+# shell ascii rainbow
+function raisciibow {
+	for (( i = 30; i < 38; i++ )); do echo -e "\033[0;"$i"m Normal: (0;$i); \033[1;"$i"m Light: (1;$i)"; done
+}
+
 # zsh colormap oneliner
 function colormap {
 	for i in {0..255}; do print -Pn "%${i}F${(l:3::0:)i}%f " ${${(M)$((i%8)):#7}:+$'\n'}; done
@@ -48,7 +54,7 @@ alias wget="wget -c"
 alias gs="git status"
 
 # clamav virus scan
-alias vscan='clamscan -r --bell -i /'
+alias vscan='freshclam -v; clamscan -rv --bell -i /'
 
 # emoticons
 alias aliens='echo "\U0001f47d"'
@@ -56,3 +62,7 @@ alias yin='echo "\ufb7e"'
 
 # easy timestamp snippet to  add to frequently ediited files
 alias timestamp='date "+%Y.%m.%d-%H:%M:%S"'
+
+# source .zshrc
+alias srz='source /Users/andavi/.zshrc'
+

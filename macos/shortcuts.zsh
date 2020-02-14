@@ -2,22 +2,25 @@
 
 #.local dictory
 my=$HOME/.local
-learn=$HOME/Documents/Personal/Learning
-edu=$HOME/Documents/Personal/Academics
+dots=$HOME/dotfiles
+personal=$HOME/Documents/Personal
+learn=$personal/Education/Learning
+edu=$personal/Education/Academics
 
 # various personal projects
-fsr=$HOME/$learn/full-stack-react-39/fullstack-react-code
-sotp=$HOME/Learning/ongoing-projects/state-of-the-potus
-stq=$HOME/Learning/ongoing-projects/sun-tzu-quotes-boxed
-bchill=$HOME/Learning/code-fellows/breathe-chill
-poems=$HOME/Learning/poems
-khan=$HOME/Learning/ongoing-projects/khan-quotes
+fsr=$learn/webdev/full-stack-react-39/fullstack-react-code
+sotp=$my/repos/state-of-the-potus
+stq=$my/repos/sun-tzu-quotes-boxed
+bchill=$learn/code-fellows/breathe-chill
+poems=$my/repos/poems
+khan=$my/repos/khan-quotes
+iching=$my/repos/iching
 
 # more academically aimed course repos
-biox=/$HOME/Documents/Personal/Academics/BioinformaticX
-dsx=/$HOME/Documents/Personal/Academics/MITx
-aix=/$HOME/Documents/Personal/Academics/ColumbiaX
-uwx=/$HOME/Documents/Personal/Academics/WashingtonX
+biox=$edu/BioinformaticX
+dsx=$edu/MITx
+aix=$edu/ColumbiaX
+uwx=$edu/WashingtonX
 dlai="/Users/andavi/Documents/Personal/Academics/Deep Learning AI"
 
 # for custom zsh files

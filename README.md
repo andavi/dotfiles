@@ -6,16 +6,17 @@ For now I only automate getting the config files from the current system and upd
 
 ## TODO
 
+- ~~Make sync script work from root~~
 - Make repo DRYer between OS directories (somehow)
 - Automate setting dots from repo to system in cases where it'd be helpful, such as:
   - Setting up a new system
   - Recovering from improper config tweaking
+- Have repo mimic system directory structures to make synching from the repo to the system easier
 
 ## Repo Tree
 
 ```zsh
 ./
-├── .DS_Store
 ├── .gitignore
 ├── common/
 │  ├── icons.txt
@@ -46,10 +47,5 @@ For now I only automate getting the config files from the current system and upd
 │  └── shortcuts.zsh
 ├── README.md
 └── setdots.sh
+
 ```
-
-### To Do
-
-* Make sync script work from root
-* Have sync script update new config files automatically
-* Keep learning

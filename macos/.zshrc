@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/andavi/.oh-my-zsh
@@ -68,6 +68,8 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  brew
+  zsh-nvm
   colored-man-pages
   zsh-syntax-highlighting
   zsh-autosuggestions
@@ -104,7 +106,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source $ZSH_CUSTOM/aliases.zsh
+#bsource $ZSH_CUSTOM/aliases.zsh
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
@@ -121,7 +123,7 @@ eval $(thefuck --alias)
 # brew formulae executables path
 export PATH="/usr/local/sbin:$PATH"
 
-# anaconda3 
+# anaconda3
 # export PATH="/Users/andavi/anaconda3/bin:$PATH"  # commented out by conda initialize
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -144,3 +146,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh # This loads NVM

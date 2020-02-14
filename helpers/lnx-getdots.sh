@@ -11,7 +11,7 @@ rsync -azvh ~/.p10k.zsh debian/
 rsync -azvh ~/.oh-my-zsh/custom/aliases.zsh debian/
 
 # misc config
-rsync -azvhr ~/.config/neofetch/ neofetch/
+rsync -azvhr ~/.config/neofetch/ debian/neofetch/
 # rsync -azvhr ~/.config/tilix/ tilix/
 
 # sync newest programming fonts

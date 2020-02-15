@@ -10,6 +10,9 @@ rsync -azvh ~/.zshrc debian/
 rsync -azvh ~/.p10k.zsh debian/
 rsync -azvh ~/.oh-my-zsh/custom/aliases.zsh debian/
 
+# personal helper scripts
+rsync -azsvh $HOME/.local/scripts/* macos/.local/scripts
+
 # misc config
 rsync -azvhr ~/.config/neofetch/ debian/neofetch/
 # rsync -azvhr ~/.config/tilix/ tilix/

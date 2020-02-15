@@ -12,6 +12,8 @@ rsync -azvh ~/.p10k.zsh macos/
 rsync -azvh /Users/andavi/.oh-my-zsh/custom/aliases.zsh macos/
 rsync -azvh /Users/andavi/.oh-my-zsh/custom/shortcuts.zsh macos/
 
+# personal helper scripts
+rsync -azsvh $HOME/.local/scripts/* macos/.local/scripts
 
 # vimrc
 rsync -azvh ~/.vimrc macos/

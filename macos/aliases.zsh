@@ -15,7 +15,7 @@ alias tzu='sun-tzu-quotes'
 alias tzubow='echo $(echo \"$(tzu)\" | lolcat -f -F 0.1) "~Sun Tzu"'
 
 alias tree='exa -TF --color=auto'
-alias treepo='tree -a -I "node_modules|.git|.git-old"'
+alias treepo='tree -a -I "node_modules|.git|.git-old|.DS*"'
 alias treelong='ll -TI "node_modeules|.git|.git-old"'
 
 # Weather from wttr.in

@@ -26,3 +26,6 @@ dlai="/Users/andavi/Documents/Personal/Academics/Deep Learning AI"
 # for custom zsh files
 shorts=$ZSH_CUSTOM/shortcuts.zsh
 alii=$ZSH_CUSTOM/aliases.zsh
+
+# misc
+genome='/Users/andavi/Documents/Personal/.senstive/genome/genome_Andrew_Davis_v3_Full_20200214035415.txt'

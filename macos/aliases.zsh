@@ -7,6 +7,7 @@
 alias ls='exa -F --color=auto'
 alias ll='ls -lhgm@FHa --git'
 alias la='ls -a'
+alias lx='ls -x'
 
 # misc
 alias cmatrix='cmatrix -a'
@@ -25,6 +26,12 @@ alias weatherline="curl 'wttr.in/~Seattle?u&format=%l:+%c++%t+%h+%w+%m'"
 alias forecast='curl "wttr.in/Seattle"'
 alias moon='curl "wttr.in/moon"'
 alias forecast2='curl "v2.wttr.in/Seattle"'
+function wttr {
+    # change Paris to your default location
+    local request="wttr.in/${1-Seattle}"
+    [ "$(tput cols)" -lt 100 ] && request+='?nu'
+    curl -H "Accept-Language: ${LANG%_*}" --compressed "$request"
+}
 
 # Networking
 alias scanlan='sudo nmap -sn 10.0.0.0/24'
@@ -39,7 +46,7 @@ alias c='pbcopy'
 alias v='pbpaste'
 
 # shell ascii rainbow
-function raisciibow {
+function rasciibow {
 	for (( i = 30; i < 38; i++ )); do echo -e "\033[0;"$i"m Normal: (0;$i); \033[1;"$i"m Light: (1;$i)"; done
 }
 
@@ -63,6 +70,6 @@ alias yin='echo "\ufb7e"'
 # easy timestamp snippet to  add to frequently ediited files
 alias timestamp='date "+%Y.%m.%d-%H:%M:%S"'
 
-# source .zshrc
-alias srz='source /Users/andavi/.zshrc'
+# enumerate a string on white spaces for a readable numbered list
+#alias enum='python /Users/andavi/.local/scripts/enumStr.py'
 

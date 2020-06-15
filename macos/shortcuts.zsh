@@ -4,11 +4,13 @@
 my=$HOME/.local
 dots=$HOME/dotfiles
 personal=$HOME/Documents/Personal
+edu=$personal/Education
 learn=$personal/Education/Learning
-edu=$personal/Education/Academics
+academia=$personal/Education/Academics
+projects=$edu/projects
 
 # various personal projects
-fsr=$learn/webdev/full-stack-react-39/fullstack-react-code
+fsr=$learn/webdev/fullstack-react-39/fullstack-react-code
 sotp=$my/repos/state-of-the-potus
 stq=$my/repos/sun-tzu-quotes-boxed
 bchill=$learn/code-fellows/breathe-chill

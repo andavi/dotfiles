@@ -5,7 +5,7 @@
 
 # exa
 alias ls='exa -F --color=auto'
-alias ll='ls -lhgm@FHa --git'
+alias ll='ls -lhgmFHa --git'
 alias la='ls -a'
 alias lx='ls -x'
 
@@ -35,6 +35,7 @@ function wttr {
 
 # Networking
 alias scanlan='sudo nmap -sn 10.0.0.0/24'
+alias scanlan2='sudo nmap -sn 10.0.1.0/24'
 alias fakecard='faker-cli --helpers userCard | jq'
 
 

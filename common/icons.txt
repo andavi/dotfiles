@@ -231,6 +231,17 @@ e0b3
 nf-ple-column_number
 e0a3
 
+----NF Badges-----
+
+
+nf-fa-user_secret
+f21b
+
+
+nf-fae-planet
+e22e
+
+
 -----Unicode------
 
 ☯︎

@@ -1,0 +1,6 @@
+#/bin/zsh
+
+# regex spreadsheet:
+# <sheetProtection.*formatRows="0"/>
+
+/usr/share/codium/codium --no-sandbox

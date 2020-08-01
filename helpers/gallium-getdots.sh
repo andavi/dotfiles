@@ -11,8 +11,10 @@ rsync -azvh ~/.p10k.zsh debian/
 rsync -azvh ~/.oh-my-zsh/custom/aliases.zsh debian/
 rsync -azvh ~/.oh-my-zsh/custom/shortcuts.zsh debian/
 
-# personal helper scripts
-rsync -azsvh $HOME/.local/scripts/* macos/.local/scripts
+# personal helper scripts & repos
+rsync -azsvh $HOME/.local/scripts/* galliumos/.local/scripts
+rsync -azsvh $HOME/.local/repos/* galliumos/.local/repos
+rsync -azsvh $HOME/.local/bin/* galliumos/.local/bin
 
 # misc config
 rsync -azvhr ~/.config/neofetch/ debian/neofetch/

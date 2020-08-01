@@ -23,11 +23,11 @@ alias treepo='tree -a -I "node_modules|.git|.git-old"'
 alias treelong='ll -TI "node_modeules|.git|.git-old"'
 
 # Weather from wttr.in
-alias weather='curl "wttr.in/~Seattle?0q"'
-alias weathertoday='curl "wttr.in/~Seattle?1q"'
-alias weatherline="curl 'wttr.in/~Seattle?u&format=%l:+%c++%t+%h+%w+%m'"
+alias weatherline='curl "wttr.in/Seattle?format=%l:+%c+%t+%h+%w+%m"'
+alias weathernow='curl "wttr.in/Seattle?0"'
+alias weathertoday='curl "wttr.in/Seattle?1"'
 alias forecast='curl "wttr.in/Seattle"'
-alias moon='curl "wttr.in/moon"'
+alias moon='curl wttr.in/moon'
 alias forecast2='curl "v2.wttr.in/Seattle"'
 
 # Networking
@@ -45,14 +45,10 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias wget="wget -c"
 alias gs="git status"
 
-# aliens
+# icons
 alias aliens='echo "\U0001f47d"'
+alias electron='echo "\ue62e"'
 
-
-# ZSH stuff
-function srz {
-	source $HOME/.zshrc
-}
 
 # zsh colormap oneliner
 function colormap {
@@ -64,11 +60,12 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias wget="wget -c"
 alias gs="git status"
 
-# aliens
-alias aliens='echo "\U0001f47d"'
-
+# protonvpn
+alias protonvpn='sudo protonvpn'
+alias pvpn='sudo protonvpn'
 
 # ZSH stuff
 function srz {
 	source $HOME/.zshrc
 }
+

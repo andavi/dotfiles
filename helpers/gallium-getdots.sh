@@ -4,12 +4,12 @@
 # Run it from the root directory of the dotfiles repo
 
 # copy galliumos shell configs
-rsync -azvh ~/.bashrc debian/
-rsync -azvh ~/.bash_aliases debian/
-rsync -azvh ~/.zshrc debian/
-rsync -azvh ~/.p10k.zsh debian/
-rsync -azvh ~/.oh-my-zsh/custom/aliases.zsh debian/
-rsync -azvh ~/.oh-my-zsh/custom/shortcuts.zsh debian/
+rsync -azvh ~/.bashrc galliumos/
+rsync -azvh ~/.bash_aliases galliumos/
+rsync -azvh ~/.zshrc galliumos/
+rsync -azvh ~/.p10k.zsh galliumos/
+rsync -azvh ~/.oh-my-zsh/custom/aliases.zsh galliumos/
+rsync -azvh ~/.oh-my-zsh/custom/shortcuts.zsh galliumos/
 
 # personal helper scripts & repos
 rsync -azsvh $HOME/.local/scripts/* galliumos/.local/scripts
@@ -17,7 +17,7 @@ rsync -azsvh $HOME/.local/repos/* galliumos/.local/repos
 rsync -azsvh $HOME/.local/bin/* galliumos/.local/bin
 
 # misc config
-rsync -azvhr ~/.config/neofetch/ debian/neofetch/
+rsync -azvhr ~/.config/neofetch/ galliumos/neofetch/
 # rsync -azvhr ~/.config/tilix/ tilix/
 
 # sync newest programming fonts

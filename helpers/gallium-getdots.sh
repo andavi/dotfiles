@@ -9,6 +9,7 @@ rsync -azvh ~/.bash_aliases debian/
 rsync -azvh ~/.zshrc debian/
 rsync -azvh ~/.p10k.zsh debian/
 rsync -azvh ~/.oh-my-zsh/custom/aliases.zsh debian/
+rsync -azvh ~/.oh-my-zsh/custom/shortcuts.zsh debian/
 
 # personal helper scripts
 rsync -azsvh $HOME/.local/scripts/* macos/.local/scripts

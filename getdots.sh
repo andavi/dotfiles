@@ -9,7 +9,7 @@ then
 
 elif [ "$os" = "Linux" ]
 then
-    ./helpers/lnx-getdots.sh
+    ./helpers/gallium-getdots.sh
     
 else
     echo "Something went wrong"

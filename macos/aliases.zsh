@@ -69,7 +69,8 @@ alias aliens='echo "\U0001f47d"'
 alias yin='echo "\ufb7e"'
 
 # easy timestamp snippet to  add to frequently ediited files
-alias timestamp='date "+%Y.%m.%d-%H:%M:%S"'
+alias timestamp='date "+%Y.%m.%d %H:%M:%S"'
+alias timestamp2='date "+%Y-%m-%d %H:%M:%S"'
 
 # enumerate a string on white spaces for a readable numbered list
 #alias enum='python /Users/andavi/.local/scripts/enumStr.py'

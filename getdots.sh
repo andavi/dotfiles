@@ -15,5 +15,5 @@ else
     echo "Something went wrong"
     exit 1
 fi
-echo "Success"
+echo "Good"
 exit 0

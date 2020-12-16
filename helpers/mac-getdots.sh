@@ -16,7 +16,7 @@ rsync -azvh /Users/andavi/.oh-my-zsh/custom/shortcuts.zsh macos/
 rsync -azsvh $HOME/.local/scripts/* macos/.local/scripts
 
 # vimrc
-rsync -azvh ~/.vimrc macos/
+rsync -azvh ~/.vim/vimrc macos/
 
 # neofetch
 rsync -azvhr ~/.config/neofetch/ macos/neofetch/

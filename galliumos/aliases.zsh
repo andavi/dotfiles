@@ -36,8 +36,13 @@ alias scanlan='sudo nmap -sn 10.0.0.0/24'
 # Generate fake names
 alias fakecard='faker-cli --helpers userCard | jq'
 
+# Generate random seed from word list
+function gen-seed(){
+	diceware -n $1 -d ' ' --no-caps -w en_eff
+}
+
 # pbcopy & pbpaste
-alias c='xclip -i'  # testing -i flag
+alias c='xclip'  # testing -i flag
 alias v='xclip -o'
 
 # misc and magic

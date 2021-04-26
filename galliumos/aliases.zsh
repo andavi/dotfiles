@@ -23,26 +23,26 @@ alias treepo='tree -a -I "node_modules|.git|.git-old"'
 alias treelong='ll -TI "node_modeules|.git|.git-old"'
 
 # Weather from wttr.in
-alias weatherline='curl "wttr.in/Seattle?format=%l:+%c+%t+%h+%w+%m"'
-alias weathernow='curl "wttr.in/Seattle?0"'
-alias weathertoday='curl "wttr.in/Seattle?1"'
+alias weather='curl "wttr.in/Seattle?0q"'
+alias weathertoday='curl "wttr.in/Seattle?1q"'
+alias weatherline="curl 'wttr.in/Seattle?u&format=%l:+%c++%t+%h+%w+%m'"
 alias forecast='curl "wttr.in/Seattle"'
-alias moon='curl wttr.in/moon'
+alias moon='curl "wttr.in/moon"'
 alias forecast2='curl "v2.wttr.in/Seattle"'
 
 # Networking
-alias scanlan='sudo nmap -sn 10.0.0.0/24'
+alias scanlan='sudo nmap -sn 192.168.1.0/24'
+alias scanlan2='sudo nmap -sn 10.0.0.0/24'
+
+# ProtonVPN
+alias protonvpn='sudo protonvpn'
+alias pvpn='sudo protonvpn'
 
 # Generate fake names
 alias fakecard='faker-cli --helpers userCard | jq'
 
-# Generate random seed from word list
-function gen-seed(){
-	diceware -n $1 -d ' ' --no-caps -w en_eff
-}
-
 # pbcopy & pbpaste
-alias c='xclip'  # testing -i flag
+alias c='xclip -i'  # testing -i flag
 alias v='xclip -o'
 
 # misc and magic
@@ -50,9 +50,8 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias wget="wget -c"
 alias gs="git status"
 
-# icons
+# aliens
 alias aliens='echo "\U0001f47d"'
-alias electron='echo "\ue62e"'
 
 
 # zsh colormap oneliner
@@ -65,9 +64,7 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias wget="wget -c"
 alias gs="git status"
 
-# protonvpn
-alias protonvpn='sudo protonvpn'
-alias pvpn='sudo protonvpn'
+
 
 # ZSH stuff
 function srz {
